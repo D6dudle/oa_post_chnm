@@ -1,4 +1,4 @@
-container_name=lambda_docker_post_container
+container_name=lambda_docker_post
 docker_image=aws_lambda_builder_image
 docker run -td --name=$container_name $docker_image
 docker cp ./requirements.txt $container_name:/
